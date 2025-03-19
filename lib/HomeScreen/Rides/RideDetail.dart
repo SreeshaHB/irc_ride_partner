@@ -25,7 +25,7 @@ class _RidedetailState extends State<Ridedetail> {
     // TODO: implement initState
     super.initState();
     _fetchRideDetails();
-    _fetchCreator(widget.currentUserId);
+    //_fetchCreator(widget.currentUserId);
   }
 
   Future<void> _fetchRideDetails() async {
@@ -37,6 +37,7 @@ class _RidedetailState extends State<Ridedetail> {
         rideData = rideDoc.data();
       });
       _fetchParticipants(rideData!['participants']);
+      _fetchCreator(rideData!['creatorId']);
     }
   }
 
