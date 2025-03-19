@@ -29,7 +29,7 @@ class _RidedetailState extends State<Ridedetail> {
   }
 
   Future<void> _fetchRideDetails() async {
-    print("Fetching ride details...");
+    //print("Fetching ride details...");
     //Fetch ride details to display
     final rideDoc = await FirebaseFirestore.instance.collection('rides').doc(widget.rideId).get();
     if (rideDoc.exists) {
@@ -42,7 +42,7 @@ class _RidedetailState extends State<Ridedetail> {
   }
 
   _fetchCreator(String creatorId) async {
-    print("Fetching creator...");
+    //print("Fetching creator...");
     final creatorDoc = await FirebaseFirestore.instance.collection('users').doc(creatorId).get();
     if (creatorDoc.exists) {
       setState(() {
@@ -53,7 +53,7 @@ class _RidedetailState extends State<Ridedetail> {
   }
 
   Future<void> _fetchParticipants(List<dynamic> participantIds) async {
-    print("Fetching participants...");
+    //print("Fetching participants...");
     List<Map<String, dynamic>> fetchedParticipants = [];
 
     for (String userId in participantIds) {
