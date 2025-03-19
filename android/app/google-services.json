@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "364449251896",
+    "project_id": "irc-ride-partner",
+    "storage_bucket": "irc-ride-partner.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364449251896:android:4d41ea1e18a947bde6dccd",
+        "android_client_info": {
+          "package_name": "com.example.irc_ride_partner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2jEJsf_SBfu_JAE2EibIOCgkTFTfU1Bs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
